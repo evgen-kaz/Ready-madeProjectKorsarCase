@@ -7,12 +7,12 @@
 ## Структура
 
 * <a href="#tools">Стек</a>
-* Реализованные проверки
-* Запуск из терминала
-* Сборка в Jenkins
-* Allure отчет
-*  Уведомление в Telegram при помощи бота
-* Видео примера запуска тестов в Selenoid
+* <a href="#cases">Реализованные проверки</a>
+* <a href="#console">Запуск из терминала</a>
+* <a href="#jenkins">Сборка в Jenkins</a>
+* <a href="#allure">Allure отчет</a>
+* <a href="#telegram">Уведомление в Telegram при помощи бота</a>
+* <a href="#video">Видео примера запуска тестов в Selenoid</a>
 ---
 
 <a id="tools"></a>
@@ -32,7 +32,7 @@
 </p>
 
 ---
-
+<a id="cases"></a>
 ## Реализованные проверки
 - Проверка работы кнопок и переходов:
   - "Каталог продукции"
@@ -43,7 +43,7 @@
   - "Пресс-центр"
   - "Применение"
 ---
-
+<a id="console"></a>
 ## <img src='media/icons/gradle.svg' width="50"/> Запуск из терминала
 
 Локальный запуск:
@@ -61,7 +61,7 @@ ${TASK}
 ```
 
 ---
-
+<a id="jenkins"></a>
 ## <img src='media/icons/jenkins.svg' width="50"/> Сборка в Jenkins
 
 [Сборка в Jenkins](https://jenkins.autotests.cloud/job/Ready-madeProjectKorsarCase/)
@@ -80,7 +80,7 @@ ${TASK}
 * `${SELENOID_URL}` - адрес удаленного сервера Selenoid.
 
 ---
-
+<a id="allure"></a>
 ## <img src='media/icons/Allure_Report.svg' width="50"/>Allure отчет
 [Allure отчет](https://jenkins.autotests.cloud/job/Ready-madeProjectKorsarCase/18/allure/)
 
@@ -98,11 +98,13 @@ ${TASK}
 * Видео выполнения автотеста.
 
 ---
+<a id="telegram"></a>
 ## <img src='media/icons/telegram.svg' width="50"/> Уведомление в Telegram при помощи бота
 
 <img src='media/icons/СкринОтчетаВТегреграм.jpg'/>
 
 ---
+<a id="video"></a>
 ## <img src='media/icons/Selenoid.svg' width="50"/> Примеры видео прохождения тестов
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 
