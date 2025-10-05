@@ -47,9 +47,9 @@
 ## <img src='media/icons/gradle.svg' width="50"/> Запуск из терминала
 
 Локальный запуск:
-
->gradle clean test
->
+```
+gradle clean test
+```
 Удаленный запуск:
 ```
 clean test
@@ -59,6 +59,7 @@ ${TASK}
 -DbrowserVersion=${BROWSER_VERSION}  
 -DbrowserResolution=${BROWSER_RESOLUTION}
 ```
+
 ---
 
 ## <img src='media/icons/jenkins.svg' width="50"/> Сборка в Jenkins
