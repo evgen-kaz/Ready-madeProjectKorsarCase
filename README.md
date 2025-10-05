@@ -7,11 +7,10 @@
 ## Структура
 
 * Стек
-* Запуск автотестов
-* Сборка в Jenkins
+* Реализованные проверки
 * Запуск из терминала
+* Сборка в Jenkins
 * Allure отчет
-* Интеграция с Allure TestOps
 *  Уведомление в Telegram при помощи бота
 * Видео примера запуска тестов в Selenoid
 ---
@@ -23,8 +22,7 @@
 <a href="https://junit.org/junit5/"><img src='media/icons/junit.svg' width="50"/></a> 
 <a href="https://selenide.org/"><img src='media/icons/Selenide.svg' width="50"/></a> 
 <a href="https://aerokube.com/selenoid/"><img src='media/icons/Selenoid.svg' width="50"/></a> 
-<a href="https://allurereport.org/"><img src='media/icons/Allure_Report.svg' width="50"/></a> 
-<img src='media/icons/Allure_TO.svg' width="50"/></a> 
+<a href="https://allurereport.org/"><img src='media/icons/Allure_Report.svg' width="50"/></a>
 <a href="https://gradle.org/"><img src='media/icons/gradle.svg' width="50"/></a> 
 <a href="https://www.jenkins.io/"><img src='media/icons/jenkins.svg' width="50"/></a> 
 <a href="https://web.telegram.org/"><img src='media/icons/telegram.svg' width="50"/></a> 
@@ -74,25 +72,28 @@ ${TASK}
 
 * `${TASK}`- набор тестов, который будет запущен
   * test - все тесты проекта
-  * header_test - тесты на проверку работы из хедера
-  * menu_test - тесты на проверку работы из меню
+  * header_test - тесты на проверку работы хедера
+  * menu_test - тесты на проверку работы меню
 * `${BROWSER}` и `${BROWSER_VERSION}` -на каком браузере и какой версии. По умолчанию - Chrome: 128
 * `${BROWSER_SIZE}` - разрешение бразуера. По умолчанию - 1920x1080.
 * `${SELENOID_URL}` - адрес удаленного сервера Selenoid.
 
-
-
-
 ---
 
 ## <img src='media/icons/Allure_Report.svg' width="50"/>Allure отчет
-[Allure отчет]()
+[Allure отчет](https://jenkins.autotests.cloud/job/Ready-madeProjectKorsarCase/18/allure/)
 
----
-## <img src='media/icons/Allure_TO.svg' width="50"/> Интеграция с Allure TestOps
+* ### Главный экран отчета
+<img src='media/icons/СкринОтчетаAllure.jpg'/>
+
+* ### Страница с проведенными тестами
+<img src='media/icons/СкринОтчетаAllureSuties.jpg'/>
 
 ---
 ## <img src='media/icons/telegram.svg' width="50"/> Уведомление в Telegram при помощи бота
 
+<img src='media/icons/СкринОтчетаВТегреграм.jpg'/>
+
 ---
-## <img src='media/icons/Selenoid.svg' width="50"/> Примеры видео выполнения тестов на Selenoid
+## <img src='media/icons/Selenoid.svg' width="50"/> Примеры видео прохождения тестов
+> К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
