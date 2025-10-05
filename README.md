@@ -1,6 +1,6 @@
-## Проект по автоматизации тестовых сценариев для сайта компании [Корсар](https://korsarcase.ru/)
+# Проект по автоматизации тестовых сценариев для сайта компании [Корсар](https://korsarcase.ru/)
 
-> Корсар - крупнейший российский производитель и постащик профессиональных защитных кейсов и контейнеров   
+> Корсар - крупнейший российский производитель и постащик профессиональных защитных кейсов и контейнеров
 > для транспортировки, эксплуатации и хранения специального оборудования.
 
 ### Структура
@@ -18,25 +18,26 @@
 
 ### Стек
 
-<img src='media/icons/java.svg' width="50"/>
-<img src='media/icons/junit.svg' width="50"/>
-<img src='media/icons/Selenide.svg' width="50"/>
-<img src='media/icons/Selenoid.svg' width="50"/>
-<img src='media/icons/Allure_Report.svg' width="50"/>
-<img src='media/icons/Allure_TO.svg' width="50"/>
-<img src='media/icons/gradle.svg' width="50"/>
-<img src='media/icons/jenkins.svg' width="50"/>
-<img src='media/icons/telegram.svg' width="50"/>
-<img src='media/icons/github.svg' width="50"/>
-<img src='media/icons/intellij.svg' width="50"/>
+<p align="center">  
+<a href="https://www.java.com/"><img src='media/icons/java.svg' width="50"/></a> 
+<a href="https://junit.org/junit5/"><img src='media/icons/junit.svg' width="50"/></a> 
+<a href="https://selenide.org/"><img src='media/icons/Selenide.svg' width="50"/></a> 
+<a href="https://aerokube.com/selenoid/"><img src='media/icons/Selenoid.svg' width="50"/></a> 
+<a href="https://allurereport.org/"><img src='media/icons/Allure_Report.svg' width="50"/></a> 
+<img src='media/icons/Allure_TO.svg' width="50"/></a> 
+<a href="https://gradle.org/"><img src='media/icons/gradle.svg' width="50"/></a> 
+<a href="https://www.jenkins.io/"><img src='media/icons/jenkins.svg' width="50"/></a> 
+<a href="https://web.telegram.org/"><img src='media/icons/telegram.svg' width="50"/></a> 
+<a href="https://github.com/"><img src='media/icons/github.svg' width="50"/></a> 
+<a href="https://www.jetbrains.com/idea/"><img src='media/icons/intellij.svg' width="50"/></a> 
+</p>
 
 ---
 ### Реализованные проверки
-- Проверка работы:
+- Проверка работы кнопок и переходов:
   - "Каталог продукции"
   - "Оставить заявку"
   - "Поиск"
-- Проверка работы кнопок меню:
   - "Лицензии и сертификаты"
   - "Производство"
   - "Пресс-центр"
