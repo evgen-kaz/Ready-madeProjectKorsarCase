@@ -3,82 +3,46 @@ package tests;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
 import page.MenuPage;
 
+@Tag("Menu")
 public class MenuTest extends TestBase {
+
     MenuPage menuPage = new MenuPage();
 
-    @DisplayName("Переход в раздел 'Грузовые перевозки'")
+    @DisplayName("Переход на страницу 'Лицензиии и сертификаты'")
     @Test
-    @Tag("Positive")
-    void successfulTransitionToTheCargoTransportationPageTest() {
+    void successfulTransitionToTheLicensesAndCertificatesPageTest() {
         menuPage.openPage()
-                .clickCargoMenu()
-                .resultClickCargoMenu();
+                .clickButtonMenu()
+                .clickButtonLicensesAndCertificates()
+                .resultClickLicensesAndCertificates();
     }
 
-    @DisplayName("Переход в раздел 'Компания'")
+    @DisplayName("Переход на страницу 'Производство'")
     @Test
-    @Tag("Positive")
-    void successfulTransitionToTheCompanyPageTest() {
+    void successfulTransitionToTheProductionPageTest() {
         menuPage.openPage()
-                .clickCompanyMenu()
-                .resultClickCompanyMenu();
+                .clickButtonMenu()
+                .clickButtonProduction()
+                .resultClickProduction();
     }
 
-    @DisplayName("Переход в раздел 'Работа в РДЖ'")
+    @DisplayName("Переход на страницу 'Пресс-центр'")
     @Test
-    @Tag("Positive")
-    void successfulTransitionToTheJobInRZDPageTest() {
+    void successfulTransitionToThePressCenterPageTest() {
         menuPage.openPage()
-                .clickCareerMenu()
-                .resultClickCareerMenu();
+                .clickButtonMenu()
+                .clickButtonPressCenter()
+                .resultClickPressCenter();
     }
 
-    @DisplayName("Переход в раздел 'Контакты'")
+    @DisplayName("Переход на страницу 'Применение'")
     @Test
-    @Tag("Positive")
-    void successfulTransitionToTheContactsInRZDPageTest() {
+    void successfulTransitionToTheUsePageTest() {
         menuPage.openPage()
-                .clickContactsMenu()
-                .resultClickContactsMenu();
-    }
-
-    @DisplayName("Переключение на версию для слабовидящих")
-    @Test
-    @Tag("Positive")
-    void successfulSwitchingToTheVersionForTheBlindTest() {
-        menuPage.openPage()
-                .clickVersionForBlindMenu()
-                .resultClickVersionForBlindMenu();
-    }
-
-    @DisplayName("Открытие окна авторизации /регистрации")
-    @Test
-    @Tag("Positive")
-    void successfulOpeningTheAuthorizationAndRegistrationWindowTest() {
-        menuPage.openPage()
-                .clickLoginMenu()
-                .resultClickLoginMenu();
-    }
-
-    @DisplayName("Переключение на окно регистрации")
-    @Test
-    @Tag("Positive")
-    void successfulSwitchingToTheRegistrationWindowTest() {
-        menuPage.openPage()
-                .clickLoginMenu()
-                .clickToTheTabRegistration()
-                .resultSwitchingRegistrationMenu();
-    }
-
-    @DisplayName("Переключение сайта на английскую версию")
-    @Test
-    @Tag("Positive")
-    void successfulSwitchingToTheEnglishVersionTest() {
-        menuPage.openPage()
-                .switchingEnglishLanguage()
-                .resultSwitchingEnglishVersionMenu();
+                .clickButtonMenu()
+                .clickButtonUse()
+                .resultClickUse();
     }
 }

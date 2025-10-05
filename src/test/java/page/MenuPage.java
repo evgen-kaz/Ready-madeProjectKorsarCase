@@ -1,109 +1,74 @@
 package page;
 
+import com.codeborne.selenide.CollectionCondition;
+import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selectors.withTagAndText;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class MenuPage {
+
     private final SelenideElement
-            cargoMenu = $(withTagAndText("a", "Грузовые перевозки")),
-            companyMenu = $(withTagAndText("a", "Компания")),
-            careerMenu = $(withTagAndText("a", "Работа в РЖД")),
-            contactsMenu = $(withTagAndText("a", "Контакты")),
-            versionForBlindMenu = $(".header_specials").$(".blind__text"),
-            loginMenu = $("[data-test-id='profile']"),
+            menuButton = $(".sandwich-btn__icon"),
+            licensesAndCertificatesButton = $("a[href='/licenses-and-certificates/']"),
+            productionButton = $("a[href='/production/']"),
+            pressCenterButton = $("a[href='/press-center/news/']"),
+            useButton = $("a[href='/use/']"),
 
-            cargoResult = $(byText("Рассчитать перевозку")),
-            companyResult = $(".block-group-header").$(byText("Структура")),
-            careerResult = $(byText("Рассчитать перевозку")),
-            contactsResult = $(byText("Контакты")),
-            versionForTheBlindResult = $("#header").$(byText("Обычная версия сайта")),
-            buttonAuthorization = $(withTagAndText("button", "Войти")),
-            tabRegistration = $("[data-test-id='tab-registration']"),
-            buttonRegistration = $("[data-test-id='registration-register']"),
-            languageRussian = $(".header_specials").$(byText("Rus")),
-            languageEnglish = $(withTagAndText("a", "Eng")),
-            englishElement = $(withTagAndText("a", "Railway stations in Russia"));
+    titleLicensesPage = $("[data-content = 'Лицензии']"),
+            titleCertificatesPage = $("[data-content = 'и сертификаты']"),
+            titleProductionPage = $(byText("Производство защитных кейсов КОРСАР®")),
+            titlePressCenterPage = $("[data-content = 'Пресс-центр Новости']");
 
+    private final ElementsCollection
+            titleUsePage = $$(".use-area-modal__menu-item");
 
     public MenuPage openPage() {
         open("");
         return this;
     }
 
-    public MenuPage clickCargoMenu() {
-        cargoMenu.click();
+    public MenuPage clickButtonMenu() {
+        menuButton.click();
         return this;
     }
 
-    public MenuPage clickCompanyMenu() {
-        companyMenu.click();
+    public MenuPage clickButtonLicensesAndCertificates() {
+        licensesAndCertificatesButton.click();
         return this;
     }
 
-    public MenuPage clickCareerMenu() {
-        careerMenu.click();
+    public MenuPage clickButtonProduction() {
+        productionButton.click();
         return this;
     }
 
-    public MenuPage clickContactsMenu() {
-        contactsMenu.click();
+    public MenuPage clickButtonPressCenter() {
+        pressCenterButton.click();
         return this;
     }
 
-    public MenuPage clickVersionForBlindMenu() {
-        versionForBlindMenu.click();
+    public MenuPage clickButtonUse() {
+        useButton.click();
         return this;
     }
 
-    public MenuPage clickLoginMenu() {
-        loginMenu.click();
-        return this;
+    public void resultClickLicensesAndCertificates() {
+        titleLicensesPage.shouldBe(visible);
+        titleCertificatesPage.shouldBe(visible);
     }
 
-    public MenuPage clickToTheTabRegistration() {
-        tabRegistration.click();
-        return this;
+    public void resultClickProduction() {
+        titleProductionPage.shouldBe(visible);
     }
 
-    public MenuPage switchingEnglishLanguage() {
-        languageRussian.click();
-        languageEnglish.click();
-        return this;
+    public void resultClickPressCenter() {
+        titlePressCenterPage.shouldBe(visible);
     }
 
-    public void resultClickCargoMenu() {
-        cargoResult.shouldBe();
-    }
-
-    public void resultClickCompanyMenu() {
-        companyResult.shouldBe();
-    }
-
-    public void resultClickCareerMenu() {
-        careerResult.shouldBe();
-    }
-
-    public void resultClickContactsMenu() {
-        contactsResult.shouldBe();
-    }
-
-    public void resultClickVersionForBlindMenu() {
-        versionForTheBlindResult.shouldBe();
-    }
-
-    public void resultClickLoginMenu() {
-        buttonAuthorization.shouldBe();
-    }
-
-    public void resultSwitchingRegistrationMenu() {
-        buttonRegistration.shouldBe();
-    }
-
-    public void resultSwitchingEnglishVersionMenu() {
-        englishElement.shouldBe();
+    public void resultClickUse() {
+        titleUsePage.shouldBe(CollectionCondition.empty);
     }
 }

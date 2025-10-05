@@ -45,3 +45,17 @@ test {
     useJUnitPlatform()
     systemProperties(System.getProperties())
 }
+
+task header_test(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("Header")
+    }
+}
+
+task menu_test(type: Test) {
+    systemProperties(System.getProperties())
+    useJUnitPlatform {
+        includeTags("Menu")
+    }
+}
