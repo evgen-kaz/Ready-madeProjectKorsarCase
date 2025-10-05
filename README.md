@@ -15,7 +15,7 @@
 * Видео примера запуска тестов в Selenoid
 ---
 
-### Стек
+## Стек
 
 <p align="center">  
 <a href="https://www.java.com/"><img src='media/icons/java.svg' width="50"/></a> 
@@ -32,7 +32,8 @@
 </p>
 
 ---
-### Реализованные проверки
+
+## Реализованные проверки
 - Проверка работы кнопок и переходов:
   - "Каталог продукции"
   - "Оставить заявку"
@@ -40,10 +41,10 @@
   - "Лицензии и сертификаты"
   - "Производство"
   - "Пресс-центр"
-  - "Применение".
-
+  - "Применение"
 ---
-### <img src='media/icons/gradle.svg' width="50"/> Запуск из терминала
+
+## <img src='media/icons/gradle.svg' width="50"/> Запуск из терминала
 
 Локальный запуск:
 
@@ -58,20 +59,20 @@ ${TASK}
 -DbrowserVersion=${BROWSER_VERSION}  
 -DbrowserResolution=${BROWSER_RESOLUTION}
 ```
-
----
-### <img src='media/icons/jenkins.svg' width="50"/> Сборка в Jenkins
-
 ---
 
-### <img src='media/icons/Allure_Report.svg' width="50"/>Allure отчет
+## <img src='media/icons/jenkins.svg' width="50"/> Сборка в Jenkins
+
+---
+
+## <img src='media/icons/Allure_Report.svg' width="50"/>Allure отчет
 [Allure отчет]()
 
 ---
-### <img src='media/icons/Allure_TO.svg' width="50"/> Интеграция с Allure TestOps
+## <img src='media/icons/Allure_TO.svg' width="50"/> Интеграция с Allure TestOps
 
 ---
-### <img src='media/icons/telegram.svg' width="50"/> Уведомление в Telegram при помощи бота
+## <img src='media/icons/telegram.svg' width="50"/> Уведомление в Telegram при помощи бота
 
 ---
-### <img src='media/icons/Selenoid.svg' width="50"/> Примеры видео выполнения тестов на Selenoid
+## <img src='media/icons/Selenoid.svg' width="50"/> Примеры видео выполнения тестов на Selenoid
