@@ -52,11 +52,11 @@ gradle clean test
 Удаленный запуск:
 ```
 clean
-${TASK} 
--Dremote=${SELENOID_URL}  
--Dbrowser=${BROWSER}  
--DbrowserVersion=${BROWSER_VERSION}  
--DbrowserResolution=${BROWSER_RESOLUTION}
+${TASK}
+-Dbrowser=${BROWSER}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}  
+-DremoteUrl=${SELENOID_URL}
 ```
 
 ---
