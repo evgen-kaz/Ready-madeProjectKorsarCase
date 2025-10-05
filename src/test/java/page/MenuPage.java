@@ -69,6 +69,6 @@ public class MenuPage {
     }
 
     public void resultClickUse() {
-        titleUsePage.shouldBe(CollectionCondition.empty);
+        titleUsePage.shouldBe(CollectionCondition.sizeGreaterThan(0));
     }
 }

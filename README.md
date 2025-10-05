@@ -53,7 +53,7 @@ gradle clean test
 ```
 Удаленный запуск:
 ```
-clean test
+clean
 ${TASK} 
 -Dremote=${SELENOID_URL}  
 -Dbrowser=${BROWSER}  
@@ -64,6 +64,24 @@ ${TASK}
 ---
 
 ## <img src='media/icons/jenkins.svg' width="50"/> Сборка в Jenkins
+
+[Сборка в Jenkins](https://jenkins.autotests.cloud/job/Ready-madeProjectKorsarCase/)
+
+<img src='media/icons/СкринСборкиJenkins.jpg'/>
+
+### Параметры сборки в Jenkins:
+
+
+* `${TASK}`- набор тестов, который будет запущен
+  * test - все тесты проекта
+  * header_test - тесты на проверку работы из хедера
+  * menu_test - тесты на проверку работы из меню
+* `${BROWSER}` и `${BROWSER_VERSION}` -на каком браузере и какой версии. По умолчанию - Chrome: 128
+* `${BROWSER_SIZE}` - разрешение бразуера. По умолчанию - 1920x1080.
+* `${SELENOID_URL}` - адрес удаленного сервера Selenoid.
+
+
+
 
 ---
 
